@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+/* HOME */
+
+/* Encabezado */
+header{
+    background-color: #EAC926;
+}
+
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.imgLogo{
+    width: 50%;
+}
+
+.img-banner img{
+    width: 100%;
+}
+
+/* Body */
+main section article img{
+    width: 100%;
+}
+
+.input {
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 70%;
+    margin-left: auto;
+}
+
+.submit {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.top-header .cuotasSinTarjeta{
+    text-align: center;
+    margin: 10px;
+}
+
+.centrarBurger{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.burger-menu{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+article {
+    padding: 15px;
+    background-color: white;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.articulo > .fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color:#39b54a;
+}
+
+.articulo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}    
+
+.titulares{
+    font-size: 24px;
+    padding-top: 10px;
+    margin: 20px 0px;
+    color:#666;
+}
+
+.precios{
+    font-size: 18px;
+    width: 60%;
+}
+
+.descuento{
+    color: #39b54a;
+    width: 40%;
+}
+.descripcion{
+    display: none;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    background-color: #ebebeb;
+}
+
+/* Footer */ 
+
+footer{
+    text-align: center;
+    margin: 20px;
+}
+
+.iconoFooter{  
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.sectionFooter{
+    margin-bottom: 25px;
+}
+
+.listadoOpcIzq, .listadoOpcDer{
+    display: none;
+}
+
+.fa-address-card, .fa-sign-in-alt, .fa-shopping-basket{
+    padding: 5px;
+}
+
+.iconoFooter{
+    color: #0044aa;
+}
+
+/* REGISTER Y LOGIN*/
+
+.textbox{
+    width: 100%;
+}
+
+.registro input, .logueo input{
+  margin-bottom: 10%;
+}
+
+.radiob {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 5% 0 5% 0;
+}
+
+.registro input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+.espaciolinea{
+    margin: 0 0 5% 0;
+}
+
+.espacio{
+    margin-top: 10px;
+}
+.registro label{
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.botones > button {
+    width: 40%;
+    max-width: 500px;
+}
+
+.logueo div{
+    display: flex;
+    justify-content: center;
+}
+
+.logueo button {
+    width: 100%;
+}
+
+.formu{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+form{
+    display: block;
+    margin: 5%;
+    padding-top: 5px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px; 
+    max-width: 400px;
+    text-align: center;
+}
+label{
+        padding: 10px 10px 10px 0px;
+        font-weight: bold;
+        font-size: 16px;
+}
+
+.checkcent{
+    display: inline-flex;
+    text-align: start;
+    padding: 20px;
+    flex-direction: column;
+}
+.checkcent input{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+/*Media queries home */
+
+@media (min-width: 361px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px;        
+    }
+    .burger-menu{
+        display: none;
+    }
+    .listadoOpcIzq{
+        display: flex;
+    }
+    .listadoOpcDer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    li{
+        list-style-type: none;
+        padding: 7px;
+    }
+    .input{
+        width: 180px;
+        border-radius: 5px;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .contenedorProd{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section article{
+        width: 48%;
+    }
+      
+    article:hover .descripcion {
+        display: block;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .logueo button:hover{
+        background-color: #0022AA;
+    }
+
+    .iconoFooter:hover{
+        color:#EAC926;
+    }
+
+    .fa-truck:hover{
+        transform: rotate(-90deg);
+    }
+
+    .mainformulario{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    }
+
+@media (min-width: 769px){
+    .top-header{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    main section article{
+        width: 22%;
+    }
+    .footerlinea{
+        display: flex;
+    }
+    .sectionFooter{
+        width: 33%;
+        margin: 20px;
+    }
+}
